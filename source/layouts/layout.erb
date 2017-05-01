@@ -17,9 +17,11 @@
   <%= javascript_include_tag  "all" %>
 </head>
 
-<body class="<%= page_classes %>">
+<body class="site">
   <%= partial "shared/navbar" %>
+  <main class="site-content">
   <%= yield %>
+  </main>
   <%= partial "shared/footer" %>
 </body>
 
