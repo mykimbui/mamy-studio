@@ -1,8 +1,18 @@
 .vertical-text {
-  writing-mode: vertical-lr;
+  transform: rotate(-90deg);
+  transform-origin: left bottom 0;
+  z-index: 10;
 }
 
 .vertical-center {
   display: flex;
   align-items: center;
+}
+
+.position-fixed {
+    position: fixed;
+}
+
+.padded {
+  padding: 200px 0;
 }
