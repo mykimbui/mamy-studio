@@ -16,7 +16,6 @@
   align-items: center;
 }
 
-
 .padded {
   padding: 30px 0;
 }
@@ -25,3 +24,7 @@
     position: fixed;
 }
 
+.hide {
+  position: absolute;
+  left: -10000px;
+}
