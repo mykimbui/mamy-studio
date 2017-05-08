@@ -17,7 +17,4 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
-
-group :development do
-  gem 'rails_real_favicon'
-end
+gem "middleman-favicon-maker"
