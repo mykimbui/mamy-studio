@@ -9,7 +9,6 @@ gem 'middleman-sprockets'
 gem "middleman", "~>3.4.1"
 gem 'middleman-deploy', '~> 1.0'
 
-
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.3.0"
 
