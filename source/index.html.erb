@@ -1,28 +1,37 @@
-<div class="container">
+<div class="container-fluid">
+
+<div class="gradient">
+    <%= partial "shared/navbar" %>
+
   <div class="row">
     <div class="col-xs-12 content text-center">
       <h1 class="option-happy">Mamy studio is a creative technology & design studio.
         We build web businesses.</h1>
         <div class="padded">
-          <a href="" class="btn" data-wipe="Work with us">Got an idea ?</a>
+          <a target="_blank" href="https://www.calendly.com/mamystudio" class="btn" data-wipe="Work with us">Got an idea ?</a>
         </div>
         <div class="mouse animated fadeInUp" data-top=" opacity:1;  " data-top-bottom=" opacity:0; " data-anchor-target="header">
           <div class="scroll">
           </div>
         </div>
       </div>
-      <div class="row">
-       <div class="col-xs-12 col-sm-6">
-         <h3 id="shake">“If you think good design is expensive, you should look at the cost of bad design.”</h3>
-         <p>– Ralf Speth</p>
-         <h3>Interested in working with us? Get in touch x 😉</h3>
-         <a href="" class="btn" data-wipe="Work with us">Work with us</a>
-       </div>
-       <div class="col-xs-12 col-sm-6">
-         <%= partial "services" %>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 sidepad" id="services">
+       <%= partial "services" %>
+     </div>
+     <div class="col-xs-12 col-sm-6 sidepad">
+       <h3 class="quote">“If you think good design is expensive, you should look at the cost of bad design.”</h3>
+       <p class="padded">– Ralf Speth</p>
+         <h4>Interested in working with us?</h4>
+         <h4>Get in touch x 😉</h4>
+       <div class="slightpad">
+         <a target="_blank" href="https://www.calendly.com/mamystudio" class="btn" data-wiped="Work with us">Work with us</a>
        </div>
      </div>
-    <div class="row">
+   </div>
+   <div class="row">
     <div class="col-xs-12 col-sm-6">
       <%= partial "team" %>
     </div>
