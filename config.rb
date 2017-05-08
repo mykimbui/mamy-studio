@@ -46,6 +46,7 @@
 #     "Helping"
 #   end
 # end
+activate :sprockets
 activate :deploy do |deploy|
   deploy.method = :git
   # Optional Settings
