@@ -6,4 +6,6 @@
 .quote {
   font-family: 'Muli', sans-serif;
   font-weight: 200;
+  font-size: calc(30px + (30-20) * (100vw - 400px)/(800-400));
+  line-height: calc(30px + (30-20) * (100vw - 400px)/(800-400));
 }

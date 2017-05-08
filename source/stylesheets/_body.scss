@@ -8,6 +8,19 @@
   flex: 1;
   font-family: "Brown Regular";
 }
+
+canvas {
+  display:block;
+  z-index: -1;
+}
+.relative {
+  position: relative;
+}
+
+.relative canvas, .absolute {
+  position: absolute;
+}
+
 body {
   width: 100wh;
   background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
