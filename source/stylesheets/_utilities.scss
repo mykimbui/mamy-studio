@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Muli|PT+Sans+Caption|PT+Serif');
+
 .vertical-text {
   writing-mode: vertical-lr;
 }
@@ -5,4 +7,9 @@
 .vertical-center {
   display: flex;
   align-items: center;
+}
+
+@font-face {
+  font-family: "Brown Regular";
+  src: url(/assets/Brown-Regular.otf) format("truetype");
 }
