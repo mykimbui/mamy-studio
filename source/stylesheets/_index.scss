@@ -1,5 +1,5 @@
 .content {
-  padding: 20px 60px 150px 60px;
+  padding: 20px 100px 150px;
 }
 
 
@@ -8,4 +8,8 @@
   font-weight: 200;
   font-size: calc(30px + (30-20) * (100vw - 400px)/(800-400));
   line-height: calc(30px + (30-20) * (100vw - 400px)/(800-400));
+}
+
+#particles-js{
+  background-color:black;
 }

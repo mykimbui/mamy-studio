@@ -29,7 +29,7 @@
 }
 
 .sidepad {
-  padding: 60px 40px;
+  padding: 60px 70px;
 
 }
 .position-fixed {
@@ -39,4 +39,8 @@
 .hide {
   position: absolute;
   left: -10000px;
+}
+
+.container-fluid {
+  padding: 0;
 }
