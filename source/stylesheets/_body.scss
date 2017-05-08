@@ -11,8 +11,8 @@
 
 h1 {
   font-weight: 800;
-  font-size: 60px;
-  line-height: 65px;
+  font-size: calc(30px + (30-20) * (100vw - 400px)/(800-400));
+  line-height: calc(35px + (35-25) * (100vw - 400px)/(800-400));
   text-align: center;
   letter-spacing: 1px;
   color: #212121;
