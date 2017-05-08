@@ -6,7 +6,9 @@
 }
 
 .vertical-text {
-  writing-mode: vertical-lr;
+  transform: rotate(-90deg);
+  transform-origin: left bottom 0;
+  z-index: 10;
 }
 
 .vertical-center {
@@ -14,6 +16,11 @@
   align-items: center;
 }
 
+
 .padded {
   padding: 30px 0;
+
+.position-fixed {
+    position: fixed;
 }
+
