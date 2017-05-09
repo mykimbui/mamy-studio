@@ -14,13 +14,24 @@
   <%= favicon_tag 'favicon_base.png' %>
   <%= stylesheet_link_tag "all" %>
   <%= javascript_include_tag  "all" %>
+
 </head>
 
-<body class="site">
+<body class="<%= page_classes %>">
+  <div class="site">
     <main class="site-content">
       <%= yield %>
     </main>
     <%= partial "shared/footer" %>
+  </div>
+  <%#= yield(:after_js) %>
+  <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+  <script>
+// Changing the defaults
+window.sr = ScrollReveal({ reset: true });
+// Customizing a reveal set
+sr.reveal('li', {opacity: 0.9,duration:3000});
+</script>
 </body>
 
 </html>

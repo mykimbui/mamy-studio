@@ -49,6 +49,10 @@
   padding-left: 40px;
 }
 
+.padding {
+  padding: 5em 0;
+}
+
 ul {
   list-style: none;
   font-size: calc(14px + (14-12) * (100vw - 400px)/(800-400));
