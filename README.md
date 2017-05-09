@@ -6,4 +6,4 @@ mamy.studio
 
 #badmamygang 🍑
 
-temporary >>> https://coordinator-systems-80641.netlify.com/
+temporary >>> https://mamy-studio.netlify.com
