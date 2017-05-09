@@ -10,12 +10,12 @@ $easing: ease-in-out;
   padding: 12px 20px;
   text-decoration: none;
   position: relative;
-  border: 1px solid #212121;
+  border: 1px solid white;
   border-radius: 1px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: left;
-  color: #212121;
+  color: white;
   overflow: hidden;
 
   &:before, &:after {
@@ -26,7 +26,60 @@ $easing: ease-in-out;
     position: absolute;
     top: 0;
     overflow: hidden;
-    color: #F1F1F2;
+    color: #212121;
+    background: white;
+  }
+
+  &:before {
+    left: 0;
+    text-indent: 18px;
+    width: 0;
+  }
+
+  &:after {
+    padding-left: inherit;
+    padding-right: inherit;
+    left: 100%;
+    text-indent: calc(-100% - 36px);
+    transition: $duration + s $easing;
+  }
+
+  &:hover {
+    &:before {
+      width: 100%;
+      transition: width $duration + s $easing;
+    }
+
+    &:after {
+      left: 0;
+      text-indent: 0;
+      transition: 0s $duration + s $easing;
+    }
+  }
+}
+
+[data-wiped] {
+  display: inline-block;
+  padding: 12px 20px;
+  text-decoration: none;
+  position: relative;
+  border: 1px solid #212121;
+  border-radius: 1px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #212121;
+  overflow: hidden;
+
+  &:before, &:after {
+    content: attr(data-wiped);
+    padding-top: inherit;
+    padding-bottom: inherit;
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    color: white;
     background: #212121;
   }
 
@@ -57,3 +110,4 @@ $easing: ease-in-out;
     }
   }
 }
+

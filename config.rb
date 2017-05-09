@@ -46,6 +46,7 @@
 #     "Helping"
 #   end
 # end
+activate :sprockets
 activate :deploy do |deploy|
   deploy.method = :git
   # Optional Settings
@@ -77,4 +78,5 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+  activate :favicon_maker
 end
