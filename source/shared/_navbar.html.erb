@@ -14,19 +14,9 @@
   <!-- Dropdown appearing on mobile only -->
   <div class="navbar-mamy-item hidden-md hidden-lg">
     <div class="dropdown">
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  </div>
-</div>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-     <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
-      <div id="mylilNav" class="verticaloverlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closelilNav()"></a>
+     <i class="fa fa-bars dropdown-toggle" onclick="openNav()"></i>
+     <div id="mylilNav" class="verticaloverlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closelilNav()"></a>
       <ul class="overlay-content">
         <li><a href="#services">Services</a></li>
         <li><a href="#team">Team</a></li>
@@ -38,13 +28,3 @@
 
 
 </div>
-
-<script>
-function openNav() {
-    document.getElementById("myNav").style.height = "100%";
-}
-
-function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-}
-</script>
