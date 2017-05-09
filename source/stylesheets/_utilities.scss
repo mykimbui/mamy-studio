@@ -48,3 +48,9 @@
 .left-pad {
   padding-left: 40px;
 }
+
+ul {
+  list-style: none;
+  font-size: calc(14px + (14-12) * (100vw - 400px)/(800-400));
+  line-height: calc(19px + (19-17) * (100vw - 400px)/(800-400));
+}
