@@ -2,3 +2,47 @@
   width: 60px;
   margin: 10px;
 }
+
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index:2;
+  background: #212121;
+  opacity: 0;
+}
+.card-link:hover {
+  opacity: 1;
+  h1 {
+    font-weight: lighter;
+    font-size: 21px;
+    line-height: 0px;
+    color: white;
+  }
+  h2 {
+    font-size: 15px;
+    line-height: 21.5px;
+    color: #a0a0a0;
+    padding-bottom: 5px;
+    letter-spacing: 0.5px;
+  }
+  li {
+    padding: 0 7px;
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+.img-team {
+  width: 200px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
