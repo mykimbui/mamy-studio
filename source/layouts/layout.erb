@@ -3,6 +3,7 @@
 <head>
   <!-- source/layouts/layout.erb -->
   <!-- [...] -->
+  <%= display_meta_tags site: 'mamy studio', description: 'we build web businesses' %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -24,14 +25,6 @@
     </main>
     <%= partial "shared/footer" %>
   </div>
-  <%#= yield(:after_js) %>
-  <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
-  <script>
-// Changing the defaults
-window.sr = ScrollReveal({ reset: true });
-// Customizing a reveal set
-sr.reveal('li', {opacity: 0.9,duration:3000});
-</script>
 </body>
 
 </html>
