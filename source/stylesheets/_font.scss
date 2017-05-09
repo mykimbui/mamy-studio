@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400');
+
+@font-face {
+  font-family: "Brown Regular";
+  src: url(/assets/Brown-Regular.otf) format("truetype");
+}
+
 h1 {
   font-weight: 800;
   font-size: calc(30px + (30-20) * (100vw - 400px)/(800-400));
@@ -23,4 +30,38 @@ h4 {
 
 p {
   font-family: "Brown Regular";
+  letter-spacing: 0.2px;
+}
+
+.list {
+  font-size: calc(14px + (14-13) * (100vw - 400px)/(800-400));
+  line-height: calc(19px + (19-18) * (100vw - 400px)/(800-400));
+}
+
+.title {
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #a0a0a0;
+  text-transform: uppercase;
+}
+
+.contact {
+  font-weight: lighter;
+  font-size: 21px;
+  line-height: 31.5px;
+  text-align: center;
+  letter-spacing: normal;
+  color: #212121;
+  a {
+    text-decoration: none;
+    color: #212121;
+    &:hover {
+      text-decoration: none;
+      color: #212121;
+    }
+  }
 }

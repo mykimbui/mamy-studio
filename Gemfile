@@ -2,15 +2,16 @@
 # the following line to use "http://" instead
 source 'https://rubygems.org'
 gem 'jquery-middleman'
-gem 'bootstrap-sass', '~> 3.3.1'
-gem 'font-awesome-sass', '~> 4.2.0'
-gem 'middleman-sprockets'
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
+gem 'middleman', '~> 4.1.7'
+gem 'middleman-sprockets', '~> 4.0.x'
+gem 'sprockets-es6'
 
-gem "middleman", "~>3.4.1"
-gem 'middleman-deploy', '~> 1.0'
+gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 
 # Live-reloading plugin
-gem "middleman-livereload", "~> 3.3.0"
+gem "middleman-livereload"
 
 # For faster file watcher updates on Windows:
 gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
