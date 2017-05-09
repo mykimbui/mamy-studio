@@ -46,6 +46,8 @@
 #     "Helping"
 #   end
 # end
+activate :meta_tags
+
 require 'sprockets/es6'
 activate :sprockets do |s|
   s.supported_output_extensions << '.es6'
