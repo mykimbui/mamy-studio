@@ -34,10 +34,16 @@ p {
 }
 
 .list {
-  font-size: calc(14px + (14-13) * (100vw - 400px)/(800-400));
+  font-size: calc(13px + (13-12) * (100vw - 400px)/(800-400));
   line-height: calc(19px + (19-18) * (100vw - 400px)/(800-400));
 }
 
+@media only screen and (max-width: 500px) {
+  .list {
+    font-size: 13px;
+    line-height: 17px;
+  }
+}
 .title {
   font-family: 'Muli', sans-serif;
   font-weight: 300;
@@ -73,6 +79,23 @@ p {
   text-align: center;
   letter-spacing: normal;
   color: white;
+  h1 {
+    font-weight: lighter;
+    font-size: 21px;
+    line-height: 0px;
+    color: white;
+  }
+  h2 {
+    font-size: 15px;
+    line-height: 21.5px;
+    color: white;
+    padding-bottom: 5px;
+    letter-spacing: 0.5px;
+  }
+
+  li {
+    padding: 0 7px;
+  }
   a {
     text-decoration: none;
     color: white;
